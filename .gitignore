@@ -1,0 +1,98 @@
+# -----------------------------------------------------------------------------
+# XTTS-v2 Easy GUI - public repository ignore rules
+# Keep source code, installer scripts, documentation, license text and small
+# source assets publishable. Exclude the local runtime and user-generated AI
+# artifacts that are downloaded or created by the application.
+# -----------------------------------------------------------------------------
+
+# Python bytecode and tooling
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Project-local runtime and environments
+.venv/
+.runtime/
+.gradio/
+.cache/
+cache/
+wandb/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Downloaded model assets
+base_models/
+models/
+loras/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+*.s2lora
+
+# User-generated application state and media
+datasets/
+projects/
+training/
+outputs/
+samples/
+assets/*.wav
+assets/*.mp3
+assets/*.flac
+assets/*.m4a
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.opus
+!assets/inference_training_done.wav
+
+# Training, TensorBoard, download and temporary files
+events.out.tfevents.*
+*.log
+*.tmp
+*.temp
+*.part
+*.download
+*.lock
+downloads/
+tmp/
+temp/
+
+# Generated metadata that belongs to local datasets/runs
+metadata_train.csv
+metadata_eval.csv
+dataset_manifest.json
+expanded_vocab.json
+expanded_vocab_manifest.json
+training_manifest.json
+progress.json
+evaluation.json
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Keep explicitly tracked documentation/source placeholders visible if used.
+!.gitkeep
+!README.md
+!LICENSE

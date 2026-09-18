@@ -14,7 +14,7 @@ A Windows-first Easy GUI for **Coqui XTTS-v2**. It combines native XTTS inferenc
 Clone the repository or download as a .zip file:
 
 ```cmd
-git clone 
+git clone https://github.com/Mixomo/XTTS-V2-Easy-GUI.git
 ```
 
 Then run the installer from this folder:
